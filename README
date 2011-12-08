@@ -1,0 +1,22 @@
+*** 用途
+vimでのjade編集結果から自動的にhtmlを生成
+
+*** 前提
+サーバサイドにjadeがインストール済み
+
+ex) npm install -g jade
+
+*** 使い方
+
+jadeファイルのファイルタイプを定義
+
+au! BufRead,BufNewFile *.jade set filetype=jade
+
+読み込み時は自動コンパイルを設定していないので下記変数を定義
+let g:jade_autocompile=1
+
+あとはモリモリコンパイルしてくれるはず
+
+### エラー検出 ###
+
+エラー等の原因でコンパイルが失敗した場合はStatusLineが赤くなります
