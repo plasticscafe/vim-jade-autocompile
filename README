@@ -15,7 +15,7 @@ au! BufRead,BufNewFile *.jade set filetype=jade
 読み込み時は自動コンパイルを設定していないので下記変数を定義
 let g:jade_autocompile=1
 
-あとはモリモリコンパイルしてくれるはず
+あとはもりもりコンパイルしてくれるはず
 
 ### エラー検出 ###
 
