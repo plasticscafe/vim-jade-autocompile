@@ -13,9 +13,9 @@ if system('which jade') != ''
 autocmd BufWritePost,BufEnter *.jade call s:auto_jade_compile()
 function! s:auto_jade_compile() " {{{
 if g:jade_compress != 0 
-  let compress_option = ' -o { pretty : true } '
+  let compress_option = ' '
 else 
-  let compress_option = ''
+  let compress_option = ' -o {pretty:true} '
 endif
 if g:jade_autocompile != 0
   try
